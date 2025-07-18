@@ -1,3 +1,21 @@
+## Visual Studio temporary files and build results
 /.vs/
-/*.user
-/*.suo
+/[Dd]ebug/
+/[Rr]elease/
+/x64/
+/x86/
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.pdb
+*.ilk
+*.obj
+*.idb
+*.log
+*.tlog
+*.lastbuildstate
+*.exe
+*.lib
+*.dll
+*.cache
