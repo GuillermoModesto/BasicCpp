@@ -20,8 +20,12 @@ int main() {
             addEmployee(employees);
             break;
         }
-        case 2: { // List Employees
+        case 2: {
             listEmployees(employees);
+            break;
+        }
+        case 3: {
+            removeEmployee(employees);
             break;
         }
               // ... Implement other cases (remove, sort, save/load)

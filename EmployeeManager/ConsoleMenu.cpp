@@ -21,7 +21,7 @@ void addEmployee(std::vector<Employee>& employees) {
 	double salary;
 
 	std::cout << "Enter name: ";
-	std::cin.ignore(); // Clear input buffer
+	std::cin.ignore(); //clear input buffer
 	std::getline(std::cin, name);
 
 	std::cout << "Enter age: ";
@@ -38,7 +38,18 @@ void addEmployee(std::vector<Employee>& employees) {
 }
 
 void listEmployees(const std::vector<Employee>& employees) {
-	for (const auto& emp : employees) { //deduce type with auto, const& for referencing, emp loops through each "employees"
+	for (const auto& emp : employees) { //deduce type with auto, const& for referencing
 		emp.printInfo();
 	}
+}
+
+void removeEmployee(std::vector<Employee>& employees) {
+	std::string name;
+
+	std::cout << "Employee name: ";
+
+	std::cin.ignore();
+	std::getline(std::cin, name);
+
+	employees[Employee::findEmployeeByName(employees, name)].printInfo();
 }
