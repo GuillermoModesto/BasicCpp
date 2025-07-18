@@ -22,7 +22,7 @@ std::string Employee::getDepartment() const {
 
 //Setters
 void Employee::setSalary(double newSalary) {
-	salary == newSalary;
+	salary = newSalary;
 }
 
 void Employee::promote(double raiseAmount) {
